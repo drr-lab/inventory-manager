@@ -19,7 +19,7 @@ public class Amount {
         return new Amount(this.value + o.value);
     }
 
-    public Amount subtract(final Amount o) {
+    public Amount difference(final Amount o) {
         return new Amount(Math.abs(this.value - o.value));
     }
 
