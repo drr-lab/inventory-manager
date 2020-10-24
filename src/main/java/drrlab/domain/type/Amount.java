@@ -19,6 +19,14 @@ public class Amount {
         return new Amount(this.value + o.value);
     }
 
+    public Amount subtract(final Amount o) {
+        return new Amount(Math.abs(this.value - o.value));
+    }
+
+    public Amount multiple(final Amount o) {
+        return new Amount(this.value * o.value);
+    }
+
     public boolean eq(final Amount o) {
         return this.value == o.value;
     }
